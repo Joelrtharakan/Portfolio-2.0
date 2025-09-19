@@ -21,7 +21,7 @@ const ProjectCard = ({ project, onCardClick }: { project: Project; onCardClick: 
       onClick={() => onCardClick(project)}
       className="cursor-pointer group"
     >
-      <Card className="bg-card/50 backdrop-blur-sm border-primary/20 h-full overflow-hidden transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl group-hover:shadow-primary/10">
+      <Card className="bg-card/50 backdrop-blur-sm border-primary/20 h-full min-h-[400px] overflow-hidden transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl group-hover:shadow-primary/10">
         {projectImage && (
           <div className="relative h-48">
             <Image
