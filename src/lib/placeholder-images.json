@@ -1,0 +1,41 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "about-avatar",
+      "description": "Joel R Tharakan profile picture",
+      "imageUrl": "https://res.cloudinary.com/dnd5jmhjf/image/upload/v1758179293/IMG-20250915-WA0005_1_srpzgz.jpg",
+      "imageHint": "profile picture"
+    },
+    {
+      "id": "project-smartbill",
+      "description": "Preview for SmartBill AI project",
+      "imageUrl": "https://res.cloudinary.com/dnd5jmhjf/image/upload/v1750754838/Screenshot_2025-06-18_at_12.33.53_PM_trfeie.png",
+      "imageHint": "dashboard analytics"
+    },
+    {
+      "id": "project-ticketing",
+      "description": "Preview for AI-Powered Support Ticketing System project",
+      "imageUrl": "https://res.cloudinary.com/dnd5jmhjf/image/upload/v1750754909/WhatsApp_Image_2025-06-23_at_09.38.00_dii9ss.jpg",
+      "imageHint": "support system"
+    },
+    {
+      "id": "project-email-jira",
+      "description": "Preview for Automated Email-to-Jira System project",
+      "imageUrl": "https://res.cloudinary.com/dnd5jmhjf/image/upload/v1750755043/Screenshot_2025-06-24_at_12.50.24_PM_cej53k.png",
+      "imageHint": "automation workflow"
+    },
+    {
+      "id": "project-support-web",
+      "description": "Preview for Web-Based Support Ticket System project",
+      "imageUrl": "https://res.cloudinary.com/dnd5jmhjf/image/upload/v1750755312/Screenshot_2025-06-24_at_12.54.30_PM_vclwzd.png",
+      "imageHint": "web interface"
+    },
+    {
+      "id": "contact-globe",
+      "description": "Globe for Contact section",
+      "imageUrl": "https://picsum.photos/seed/globe/500/500",
+      "imageHint": "world map"
+    }
+  ]
+}
