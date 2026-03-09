@@ -7,7 +7,6 @@ import Image from 'next/image';
 
 /* ── Category config ── */
 const CATEGORIES = [
-  { id: 'All', label: 'All', icon: '◎' },
   { id: 'Programming', label: 'Programming', icon: '⟨/⟩' },
   { id: 'AI & ML', label: 'AI & ML', icon: '🧠' },
   { id: 'Data Analytics', label: 'Data Analytics', icon: '📊' },
@@ -228,25 +227,16 @@ const CategorySection = ({
 
 /* ─────────────────────── Main component ─────────────────────── */
 const Skills = () => {
-  const [activeCategory, setActiveCategory] = useState('All');
+  const [activeCategory, setActiveCategory] = useState('Programming');
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
 
   const filteredSkills = useMemo(() => {
-    if (activeCategory === 'All') return skillsDataFlat;
     return skillsDataFlat.filter(s => s.category === activeCategory);
   }, [activeCategory]);
 
-  // Group skills by category for "All" view
-  const groupedSkills = useMemo(() => {
-    if (activeCategory !== 'All') return null;
-    const groups: Record<string, SkillItem[]> = {};
-    skillsDataFlat.forEach(skill => {
-      if (!groups[skill.category]) groups[skill.category] = [];
-      groups[skill.category].push(skill);
-    });
-    return groups;
-  }, [activeCategory]);
+  // Group skills by category for "All" view (Removed since "All" is no longer an option)
+  const groupedSkills = null;
 
   // Total counts per category
   const categoryCounts = useMemo(() => {
@@ -258,7 +248,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <section id="skills" className="py-20 md:py-32 relative overflow-hidden">
+    <section id="skills" className="pt-12 md:pt-16 pb-20 md:pb-32 relative overflow-hidden">
       {/* Animated background */}
       <ParticlesBackground />
 
@@ -311,23 +301,7 @@ const Skills = () => {
             that power my development workflow
           </p>
 
-          {/* Stats row */}
-          <div className="flex justify-center gap-6 md:gap-10 mt-6">
-            {[
-              { n: skillsDataFlat.length, label: 'Technologies' },
-              { n: Object.keys(CATEGORY_GRADIENTS).length, label: 'Categories' },
-              { n: skillsDataFlat.filter(s => s.category === 'AI & ML').length, label: 'AI/ML Skills' },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center">
-                <div className="text-xl md:text-2xl font-bold text-foreground font-headline">
-                  {stat.n}+
-                </div>
-                <div className="text-[10px] md:text-xs text-muted-foreground/60 tracking-wide uppercase mt-0.5">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </div>
+
         </motion.div>
 
         {/* ── Category filter ── */}
@@ -378,29 +352,11 @@ const Skills = () => {
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.35, ease: [0.23, 1, 0.32, 1] }}
           >
-            {activeCategory === 'All' && groupedSkills ? (
-              <div className="space-y-10">
-                {Object.entries(groupedSkills).map(([cat, skills], gi) => {
-                  const startIdx = Object.entries(groupedSkills)
-                    .slice(0, gi)
-                    .reduce((sum, [, s]) => sum + s.length, 0);
-                  return (
-                    <CategorySection
-                      key={cat}
-                      categoryId={cat}
-                      skills={skills}
-                      startIndex={startIdx}
-                    />
-                  );
-                })}
-              </div>
-            ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                {filteredSkills.map((skill, i) => (
-                  <SkillCard key={skill.name} skill={skill} index={i} />
-                ))}
-              </div>
-            )}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {filteredSkills.map((skill, i) => (
+                <SkillCard key={skill.name} skill={skill} index={i} />
+              ))}
+            </div>
           </motion.div>
         </AnimatePresence>
 

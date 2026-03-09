@@ -6,20 +6,40 @@ import Experience from '@/components/sections/experience';
 import Contact from '@/components/sections/contact';
 import { Separator } from '@/components/ui/separator';
 
+import { ScrollReveal } from '@/components/ui/scroll-reveal';
+
 export default function Home() {
   return (
     <div className="flex flex-col">
       <Hero />
       <div className="container mx-auto px-4 md:px-8">
-        <About />
-        <Separator className="my-16 md:my-24" />
-        <Skills />
-        <Separator className="my-16 md:my-24" />
-        <Projects />
-        <Separator className="my-16 md:my-24" />
-        <Experience />
-        <Separator className="my-16 md:my-24" />
-        <Contact />
+        <ScrollReveal>
+          <About />
+        </ScrollReveal>
+
+        {/* Significantly reduced space between About and Skills (Tools) */}
+
+        <ScrollReveal>
+          <Skills />
+        </ScrollReveal>
+
+        <Separator className="my-12 md:my-16 opacity-50" />
+
+        <ScrollReveal>
+          <Projects />
+        </ScrollReveal>
+
+        <Separator className="my-12 md:my-16 opacity-50" />
+
+        <ScrollReveal>
+          <Experience />
+        </ScrollReveal>
+
+        <Separator className="my-12 md:my-16 opacity-50" />
+
+        <ScrollReveal>
+          <Contact />
+        </ScrollReveal>
       </div>
     </div>
   );
