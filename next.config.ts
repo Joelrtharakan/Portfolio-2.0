@@ -47,6 +47,18 @@ const nextConfig: NextConfig = {
         hostname: 'cdn.jsdelivr.net',
         port: '',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'img.icons8.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'huggingface.co',
+        port: '',
+        pathname: '/**',
       }
     ],
   },
