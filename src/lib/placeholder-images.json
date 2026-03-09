@@ -1,34 +1,51 @@
-
 {
   "placeholderImages": [
     {
       "id": "about-avatar",
       "description": "Joel R Tharakan profile picture",
-  "imageUrl": "/profilephoto.jpg",
+      "imageUrl": "/profilephoto.jpg",
       "imageHint": "profile picture"
+    },
+    {
+      "id": "project-cybersecurity",
+      "description": "Preview for Cybersecurity Threat Intelligence Analyzer 2.0",
+      "imageUrl": "/project_cybersecurity.png",
+      "imageHint": "cybersecurity dashboard"
+    },
+    {
+      "id": "project-cway",
+      "description": "Preview for Cway Academy Online Learning Hub",
+      "imageUrl": "/project_cway.png",
+      "imageHint": "learning management system"
+    },
+    {
+      "id": "project-boredom",
+      "description": "Preview for AI-Powered Boredom Breaker System",
+      "imageUrl": "/project_boredom_enhanced.png",
+      "imageHint": "emotion app interface"
     },
     {
       "id": "project-smartbill",
       "description": "Preview for SmartBill AI project",
-  "imageUrl": "/SmartBillAIInvoiceAnalyticsPlatform.png",
+      "imageUrl": "/project_smartbill_enhanced.png",
       "imageHint": "dashboard analytics"
     },
     {
       "id": "project-ticketing",
       "description": "Preview for AI-Powered Support Ticketing System project",
-  "imageUrl": "/AIPowered SupportTicketingSystem.jpg",
+      "imageUrl": "/project_ticketing_enhanced.png",
       "imageHint": "support system"
     },
     {
       "id": "project-email-jira",
       "description": "Preview for Automated Email-to-Jira System project",
-  "imageUrl": "/AutomatedEmailtoJiraSystem.png",
+      "imageUrl": "/project_email_jira_enhanced.png",
       "imageHint": "automation workflow"
     },
     {
       "id": "project-support-web",
       "description": "Preview for Web-Based Support Ticket System project",
-  "imageUrl": "/WebBasedSupportTicketSystem.png",
+      "imageUrl": "/WebBasedSupportTicketSystem.png",
       "imageHint": "web interface"
     },
     {

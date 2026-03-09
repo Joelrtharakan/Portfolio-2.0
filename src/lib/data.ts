@@ -110,6 +110,33 @@ export const skillsData = {
 
 export const projectsData = [
   {
+    title: 'Cybersecurity Threat Intelligence Analyzer 2.0',
+    category: 'Cybersecurity',
+    image: 'project-cybersecurity',
+    tags: ['HTML', 'Python', 'CSS', 'MongoDB'],
+    description: 'A robust analyzer tool that fetches, aggregates, and visualizes cybersecurity threat intelligence effectively.',
+    liveLink: '#',
+    githubLink: 'https://github.com/Joelrtharakan/Cybersecurity-Threat-Intelligence-Analyzer-2.0',
+  },
+  {
+    title: 'Online Learning Hub',
+    category: 'Full-Stack',
+    image: 'project-cway',
+    tags: ['React', 'Node.js', 'MongoDB', 'Socket.IO', 'Material UI'],
+    description: 'A comprehensive MERN stack learning management system with interactive quizzes, live discussions, certificates, and an analytics dashboard.',
+    liveLink: '#',
+    githubLink: 'https://github.com/Joelrtharakan/Cway-Academy-Online-Learning-Hub.git',
+  },
+  {
+    title: 'AI-Powered Boredom Breaker System',
+    category: 'AI & Automation',
+    image: 'project-boredom',
+    tags: ['Flutter (Dart)', 'FastAPI', 'SQLite', 'ChromaDB'],
+    description: 'An intelligent system that detects emotions and generates personalized activities to break boredom and improve mood.',
+    liveLink: '#',
+    githubLink: 'https://github.com/Joelrtharakan/AI-Powered-Boredom-Breaker-System-Using-Emotion-Detection-and-Personalized-Activity-Generation',
+  },
+  {
     title: 'SmartBill AI – Invoice & Analytics Platform',
     category: 'Full-Stack',
     image: 'project-smartbill',
@@ -135,15 +162,6 @@ export const projectsData = [
     description: 'An automation tool that parses incoming support emails and creates corresponding Jira tickets automatically, streamlining workflow.',
     liveLink: '#',
     githubLink: 'https://github.com/Joelrtharakan/Email-ticket-Project.git',
-  },
-  {
-    title: 'Web-Based Support Ticket System',
-    category: 'Full-Stack',
-    image: 'project-support-web',
-    tags: ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'File Uploads'],
-    description: 'A foundational web application for managing support tickets, featuring user authentication, ticket tracking, and file uploads.',
-    liveLink: '#',
-    githubLink: 'https://github.com/Joelrtharakan/Support-Ticket-Webpage.git',
   },
 ];
 
