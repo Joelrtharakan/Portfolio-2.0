@@ -12,22 +12,22 @@ export const aboutData = {
   bio: "A dedicated developer with a passion for building intelligent, user-focused digital solutions. I specialize in AI-powered applications, full-stack web development, and data-driven projects. Currently pursuing a B.Tech in Artificial Intelligence and Data Science, I believe in writing clean, efficient code and designing with purpose. Beyond development, I love exploring new frameworks, learning how AI is shaping our world, and contributing meaningfully to impactful projects.",
   highlights: [
     {
-      icon: Layers,
+      icon: 'https://img.icons8.com/color/48/stack.png',
       title: 'Full-Stack Developer',
       text: 'Building end-to-end solutions with modern technologies.',
     },
     {
-      icon: Bot,
+      icon: 'https://img.icons8.com/3d-fluency/94/bot.png',
       title: 'AI Enthusiast',
       text: 'Integrating intelligent features into real-world applications.',
     },
     {
-      icon: Puzzle,
+      icon: 'https://img.icons8.com/3d-fluency/94/thinking-face-2.png',
       title: 'Problem Solver',
       text: 'Transforming complex challenges into elegant solutions.',
     },
     {
-      icon: BookOpen,
+      icon: 'https://img.icons8.com/external-stickers-smashing-stocks/70/external-Learning-creativity-stickers-pack-stickers-smashing-stocks.png',
       title: 'Continuous Learner',
       text: 'Always exploring new technologies and best practices.',
     },
