@@ -318,15 +318,14 @@ const Skills = () => {
               <button
                 key={cat.id}
                 onClick={() => setActiveCategory(cat.id)}
-                className={`group relative px-4 py-2 rounded-xl text-xs md:text-sm font-medium transition-all duration-300 border ${isActive
-                  ? 'bg-primary/12 text-primary border-primary/30 shadow-lg shadow-primary/10'
-                  : 'bg-card/20 text-muted-foreground border-border/20 hover:border-primary/20 hover:text-foreground hover:bg-card/40'
+                className={`group relative px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 border backdrop-blur-sm ${isActive
+                  ? 'bg-primary/10 text-primary border-primary/40 shadow-[0_0_15px_hsl(var(--primary)/0.15)]'
+                  : 'bg-card/20 text-muted-foreground border-white/5 hover:border-primary/30 hover:text-foreground hover:bg-white/5 shadow-sm'
                   }`}
               >
-                <span className="flex items-center gap-1.5">
-                  <span className="text-[13px]">{cat.icon}</span>
-                  <span>{cat.label}</span>
-                  <span className={`text-[10px] px-1.5 py-0.5 rounded-full transition-colors duration-300 ${isActive ? 'bg-primary/15 text-primary' : 'bg-muted/20 text-muted-foreground/40'
+                <span className="flex items-center gap-2 relative z-10 transition-transform duration-200 group-hover:scale-[1.02]">
+                  <span className="tracking-wide leading-none">{cat.label}</span>
+                  <span className={`text-[10px] px-1.5 py-0.5 rounded-full font-bold leading-none transition-colors duration-300 ${isActive ? 'bg-primary/20 text-primary' : 'bg-white/10 text-muted-foreground/50 group-hover:bg-white/15'
                     }`}>
                     {categoryCounts[cat.id] || 0}
                   </span>
@@ -334,8 +333,8 @@ const Skills = () => {
                 {isActive && (
                   <motion.div
                     layoutId="active-pill"
-                    className="absolute inset-0 rounded-xl border-2 border-primary/30 pointer-events-none"
-                    transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                    className="absolute inset-0 rounded-full border border-primary/50 bg-primary/5 pointer-events-none"
+                    transition={{ type: 'spring', stiffness: 400, damping: 30 }}
                   />
                 )}
               </button>

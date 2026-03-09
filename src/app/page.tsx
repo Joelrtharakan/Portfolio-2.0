@@ -17,7 +17,7 @@ export default function Home() {
           <About />
         </ScrollReveal>
 
-        {/* Significantly reduced space between About and Skills (Tools) */}
+        <Separator className="my-8 md:my-12 opacity-50" />
 
         <ScrollReveal>
           <Skills />
