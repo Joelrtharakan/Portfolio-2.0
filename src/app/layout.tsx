@@ -48,11 +48,11 @@ export default function RootLayout({
       </head>
       <body
         className={cn(
-          'min-h-screen bg-background font-body text-foreground antialiased'
+          'min-h-screen bg-background font-body text-foreground antialiased overflow-x-hidden'
         )}
       >
         <Header />
-        <main>{children}</main>
+        <main className="overflow-x-hidden">{children}</main>
         <Toaster />
       </body>
     </html>

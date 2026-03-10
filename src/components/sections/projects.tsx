@@ -13,7 +13,7 @@ import { Github } from 'lucide-react';
 
 type Project = typeof projectsData[0];
 
-const ProjectCard = ({ project, onCardClick }: { project: Project; onCardClick: (project: Project) => void; }) => {
+const ProjectCard = ({ project, onCardClick, index }: { project: Project; onCardClick: (project: Project) => void; index: number; }) => {
   const projectImage = PlaceHolderImages.find((img) => img.id === project.image);
 
   return (
@@ -30,6 +30,7 @@ const ProjectCard = ({ project, onCardClick }: { project: Project; onCardClick: 
               data-ai-hint={projectImage.imageHint}
               width={600}
               height={400}
+              priority={index < 3}
               className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
             />
           </div>
@@ -84,9 +85,9 @@ const Projects = () => {
           variants={containerVariants}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {projectsData.map((project) => (
+          {projectsData.map((project, index) => (
             <motion.div variants={itemVariants} key={project.title}>
-              <ProjectCard project={project} onCardClick={setSelectedProject} />
+              <ProjectCard project={project} onCardClick={setSelectedProject} index={index} />
             </motion.div>
           ))}
         </motion.div>

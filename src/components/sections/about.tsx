@@ -70,7 +70,7 @@ const About = () => {
 
               <div className="relative z-10 flex flex-col justify-center h-full">
                 <h3 className="text-3xl font-bold mb-6 font-headline bg-clip-text text-transparent bg-gradient-to-br from-foreground to-foreground/70">Hello! I'm Joel.</h3>
-                <p className="text-base sm:text-lg md:text-xl text-foreground/80 leading-loose md:leading-[2] font-light text-justify tracking-wide">
+                <p className="text-base sm:text-lg md:text-xl text-foreground/80 leading-relaxed md:leading-loose font-light text-left">
                   {aboutData.bio}
                 </p>
               </div>
@@ -119,7 +119,7 @@ const About = () => {
                     <h4 className="font-bold font-headline text-lg sm:text-xl mb-3 text-foreground group-hover:text-primary transition-colors duration-500 text-center">
                       {highlight.title}
                     </h4>
-                    <p className="text-foreground/70 leading-relaxed text-sm text-justify w-full">
+                    <p className="text-foreground/70 leading-relaxed text-sm text-center w-full">
                       {highlight.text}
                     </p>
                   </div>
