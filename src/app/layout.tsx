@@ -3,6 +3,7 @@ import './globals.css';
 import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/header';
+import LenisProvider from '@/components/lenis-provider';
 
 export const metadata: Metadata = {
   title: 'Joel R Tharakan',
@@ -52,7 +53,9 @@ export default function RootLayout({
         )}
       >
         <Header />
-        <main>{children}</main>
+        <LenisProvider>
+          <main className="overflow-x-hidden">{children}</main>
+        </LenisProvider>
         <Toaster />
       </body>
     </html>

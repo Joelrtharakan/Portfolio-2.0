@@ -47,6 +47,7 @@ const HeroBackground = () => {
     window.addEventListener('mousemove', onMouseMove);
 
     // Animation
+    let animationFrameId: number;
     const clock = new THREE.Clock();
     const animate = () => {
       const elapsedTime = clock.getElapsedTime();
@@ -56,7 +57,7 @@ const HeroBackground = () => {
         particlesMesh.rotation.x += -mouse.y * 0.05;
       }
       renderer.render(scene, camera);
-      requestAnimationFrame(animate);
+      animationFrameId = requestAnimationFrame(animate);
     };
     animate();
 
@@ -71,11 +72,12 @@ const HeroBackground = () => {
     return () => {
       window.removeEventListener('resize', onResize);
       window.removeEventListener('mousemove', onMouseMove);
+      cancelAnimationFrame(animationFrameId);
       currentMount.removeChild(renderer.domElement);
     };
   }, []);
 
-  return <div ref={mountRef} className="absolute inset-0 z-0" />;
+  return <div ref={mountRef} className="absolute inset-0 z-0 pointer-events-none" />;
 };
 
 export default HeroBackground;

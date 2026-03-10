@@ -13,7 +13,7 @@ import { Github } from 'lucide-react';
 
 type Project = typeof projectsData[0];
 
-const ProjectCard = ({ project, onCardClick }: { project: Project; onCardClick: (project: Project) => void; }) => {
+const ProjectCard = ({ project, onCardClick, index }: { project: Project; onCardClick: (project: Project) => void; index: number; }) => {
   const projectImage = PlaceHolderImages.find((img) => img.id === project.image);
 
   return (
@@ -21,7 +21,7 @@ const ProjectCard = ({ project, onCardClick }: { project: Project; onCardClick: 
       onClick={() => onCardClick(project)}
       className="cursor-pointer group"
     >
-      <Card className="bg-card/50 backdrop-blur-sm border-primary/20 h-full min-h-[400px] overflow-hidden transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl group-hover:shadow-primary/10">
+      <Card className="flex flex-col bg-card/50 backdrop-blur-sm border-primary/20 h-full min-h-[400px] overflow-hidden transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl group-hover:shadow-primary/10">
         {projectImage && (
           <div className="relative h-48">
             <Image
@@ -30,17 +30,18 @@ const ProjectCard = ({ project, onCardClick }: { project: Project; onCardClick: 
               data-ai-hint={projectImage.imageHint}
               width={600}
               height={400}
+              priority={index < 3}
               className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
             />
           </div>
         )}
         <CardHeader>
-          <CardTitle className="font-headline text-xl">{project.title}</CardTitle>
+          <CardTitle className="font-headline text-xl line-clamp-2 md:min-h-[56px]">{project.title}</CardTitle>
         </CardHeader>
-        <CardContent>
-          <p className="text-sm text-foreground/80 mb-4 line-clamp-2">{project.description}</p>
-          <div className="flex flex-wrap gap-2">
-            {project.tags.slice(0, 3).map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
+        <CardContent className="flex flex-col flex-1">
+          <p className="text-sm text-foreground/80 mb-4 line-clamp-2 min-h-[40px]">{project.description}</p>
+          <div className="flex flex-wrap gap-2 mt-auto">
+            {project.tags.slice(0, 4).map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
           </div>
         </CardContent>
       </Card>
@@ -84,9 +85,9 @@ const Projects = () => {
           variants={containerVariants}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {projectsData.map((project) => (
+          {projectsData.map((project, index) => (
             <motion.div variants={itemVariants} key={project.title}>
-              <ProjectCard project={project} onCardClick={setSelectedProject} />
+              <ProjectCard project={project} onCardClick={setSelectedProject} index={index} />
             </motion.div>
           ))}
         </motion.div>
@@ -116,7 +117,7 @@ const Projects = () => {
           </Dialog>
         )}
       </AnimatePresence>
-    </section>
+    </section >
   );
 };
 
