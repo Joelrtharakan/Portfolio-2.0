@@ -21,7 +21,7 @@ const ProjectCard = ({ project, onCardClick, index }: { project: Project; onCard
       onClick={() => onCardClick(project)}
       className="cursor-pointer group"
     >
-      <Card className="bg-card/50 backdrop-blur-sm border-primary/20 h-full min-h-[400px] overflow-hidden transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl group-hover:shadow-primary/10">
+      <Card className="flex flex-col bg-card/50 backdrop-blur-sm border-primary/20 h-full min-h-[400px] overflow-hidden transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-xl group-hover:shadow-primary/10">
         {projectImage && (
           <div className="relative h-48">
             <Image
@@ -36,11 +36,11 @@ const ProjectCard = ({ project, onCardClick, index }: { project: Project; onCard
           </div>
         )}
         <CardHeader>
-          <CardTitle className="font-headline text-xl">{project.title}</CardTitle>
+          <CardTitle className="font-headline text-xl line-clamp-2 md:min-h-[56px]">{project.title}</CardTitle>
         </CardHeader>
-        <CardContent>
-          <p className="text-sm text-foreground/80 mb-4 line-clamp-2">{project.description}</p>
-          <div className="flex flex-wrap gap-2">
+        <CardContent className="flex flex-col flex-1">
+          <p className="text-sm text-foreground/80 mb-4 line-clamp-2 min-h-[40px]">{project.description}</p>
+          <div className="flex flex-wrap gap-2 mt-auto">
             {project.tags.slice(0, 4).map(tag => <Badge key={tag} variant="secondary">{tag}</Badge>)}
           </div>
         </CardContent>
@@ -117,7 +117,7 @@ const Projects = () => {
           </Dialog>
         )}
       </AnimatePresence>
-    </section>
+    </section >
   );
 };
 
