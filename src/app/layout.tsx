@@ -48,7 +48,7 @@ export default function RootLayout({
       </head>
       <body
         className={cn(
-          'min-h-screen bg-background font-body text-foreground antialiased overflow-x-hidden'
+          'min-h-screen bg-background font-body text-foreground antialiased'
         )}
       >
         <Header />
