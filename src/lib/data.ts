@@ -110,6 +110,15 @@ export const skillsData = {
 
 export const projectsData = [
   {
+    title: 'AI-Powered Boredom Breaker System',
+    category: 'AI & Automation',
+    image: 'project-boredom',
+    tags: ['Flutter (Dart)', 'FastAPI', 'SQLite', 'ChromaDB'],
+    description: 'An intelligent system that detects emotions and generates personalized activities to break boredom and improve mood.',
+    liveLink: '#',
+    githubLink: 'https://github.com/Joelrtharakan/AI-Powered-Boredom-Breaker-System-Using-Emotion-Detection-and-Personalized-Activity-Generation',
+  },
+  {
     title: 'Cybersecurity Threat Intelligence Analyzer 2.0',
     category: 'Cybersecurity',
     image: 'project-cybersecurity',
@@ -126,15 +135,6 @@ export const projectsData = [
     description: 'A comprehensive MERN stack learning management system with interactive quizzes, live discussions, certificates, and an analytics dashboard.',
     liveLink: '#',
     githubLink: 'https://github.com/Joelrtharakan/Cway-Academy-Online-Learning-Hub.git',
-  },
-  {
-    title: 'AI-Powered Boredom Breaker System',
-    category: 'AI & Automation',
-    image: 'project-boredom',
-    tags: ['Flutter (Dart)', 'FastAPI', 'SQLite', 'ChromaDB'],
-    description: 'An intelligent system that detects emotions and generates personalized activities to break boredom and improve mood.',
-    liveLink: '#',
-    githubLink: 'https://github.com/Joelrtharakan/AI-Powered-Boredom-Breaker-System-Using-Emotion-Detection-and-Personalized-Activity-Generation',
   },
   {
     title: 'SmartBill AI – Invoice & Analytics Platform',
