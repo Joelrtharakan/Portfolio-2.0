@@ -55,7 +55,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-[100dvh] w-full flex items-center justify-center overflow-hidden">
       <HeroBackground />
       <motion.div
         onMouseMove={handleMouseMove}
