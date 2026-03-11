@@ -390,12 +390,12 @@ const Skills = () => {
           {/* Skills cards */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
             {[
-              { name: 'Teamwork', icon: 'https://img.icons8.com/clouds/256/meeting-room.png', color: '#3B82F6', glow: 'rgba(59,130,246,0.15)', desc: 'Collaborative synergy' },
-              { name: 'Communication', icon: 'https://img.icons8.com/fluency/48/communication--v2.png', color: '#A855F7', glow: 'rgba(168,85,247,0.15)', desc: 'Clear & effective' },
-              { name: 'Problem Solving', icon: 'https://img.icons8.com/stickers/100/creativity-and-resourcefulness.png', color: '#F59E0B', glow: 'rgba(245,158,11,0.15)', desc: 'Creative solutions' },
-              { name: 'Critical Thinking', icon: 'https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-critical-thinking-literature-flaticons-lineal-color-flat-icons.png', color: '#10B981', glow: 'rgba(16,185,129,0.15)', desc: 'Analytical mindset' },
-              { name: 'Leadership', icon: 'https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-leadership-business-flaticons-lineal-color-flat-icons.png', color: '#EF4444', glow: 'rgba(239,68,68,0.15)', desc: 'Inspire & guide' },
-              { name: 'Adaptability', icon: 'https://img.icons8.com/fluency/96/change.png', color: '#8B5CF6', glow: 'rgba(139,92,246,0.15)', desc: 'Quick to evolve' },
+              { name: 'Teamwork', icon: '/icons/256_meeting_room.webp', color: '#3B82F6', glow: 'rgba(59,130,246,0.15)', desc: 'Collaborative synergy' },
+              { name: 'Communication', icon: '/icons/48_communication__v2.webp', color: '#A855F7', glow: 'rgba(168,85,247,0.15)', desc: 'Clear & effective' },
+              { name: 'Problem Solving', icon: '/icons/100_creativity_and_resourcefulness.webp', color: '#F59E0B', glow: 'rgba(245,158,11,0.15)', desc: 'Creative solutions' },
+              { name: 'Critical Thinking', icon: '/icons/64_external_critical_thinking_literature_flaticons_lineal_color_flat_icons.webp', color: '#10B981', glow: 'rgba(16,185,129,0.15)', desc: 'Analytical mindset' },
+              { name: 'Leadership', icon: '/icons/64_external_leadership_business_flaticons_lineal_color_flat_icons.webp', color: '#EF4444', glow: 'rgba(239,68,68,0.15)', desc: 'Inspire & guide' },
+              { name: 'Adaptability', icon: '/icons/96_change.webp', color: '#8B5CF6', glow: 'rgba(139,92,246,0.15)', desc: 'Quick to evolve' },
             ].map((s, i) => (
               <motion.div
                 key={s.name}

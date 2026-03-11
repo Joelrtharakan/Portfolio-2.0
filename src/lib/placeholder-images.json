@@ -9,43 +9,43 @@
     {
       "id": "project-cybersecurity",
       "description": "Preview for Cybersecurity Threat Intelligence Analyzer 2.0",
-      "imageUrl": "/project_cybersecurity.png",
+      "imageUrl": "/project_cybersecurity.webp",
       "imageHint": "cybersecurity dashboard"
     },
     {
       "id": "project-cway",
       "description": "Preview for Cway Academy Online Learning Hub",
-      "imageUrl": "/project_cway.png",
+      "imageUrl": "/project_cway.webp",
       "imageHint": "learning management system"
     },
     {
       "id": "project-boredom",
       "description": "Preview for AI-Powered Boredom Breaker System",
-      "imageUrl": "/project_boredom_enhanced.png",
+      "imageUrl": "/project_boredom_enhanced.webp",
       "imageHint": "emotion app interface"
     },
     {
       "id": "project-smartbill",
       "description": "Preview for SmartBill AI project",
-      "imageUrl": "/project_smartbill_enhanced.png",
+      "imageUrl": "/project_smartbill_enhanced.webp",
       "imageHint": "dashboard analytics"
     },
     {
       "id": "project-ticketing",
       "description": "Preview for AI-Powered Support Ticketing System project",
-      "imageUrl": "/project_ticketing_enhanced.png",
+      "imageUrl": "/project_ticketing_enhanced.webp",
       "imageHint": "support system"
     },
     {
       "id": "project-email-jira",
       "description": "Preview for Automated Email-to-Jira System project",
-      "imageUrl": "/project_email_jira_enhanced.png",
+      "imageUrl": "/project_email_jira_enhanced.webp",
       "imageHint": "automation workflow"
     },
     {
       "id": "project-support-web",
       "description": "Preview for Web-Based Support Ticket System project",
-      "imageUrl": "/WebBasedSupportTicketSystem.png",
+      "imageUrl": "/WebBasedSupportTicketSystem.webp",
       "imageHint": "web interface"
     },
     {

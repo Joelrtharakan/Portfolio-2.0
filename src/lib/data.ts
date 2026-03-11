@@ -12,22 +12,22 @@ export const aboutData = {
   bio: "A dedicated developer with a passion for building intelligent, user-focused digital solutions. I specialize in AI-powered applications, full-stack web development, and data-driven projects. Currently pursuing a B.Tech in Artificial Intelligence and Data Science, I believe in writing clean, efficient code and designing with purpose. Beyond development, I love exploring new frameworks, learning how AI is shaping our world, and contributing meaningfully to impactful projects.",
   highlights: [
     {
-      icon: 'https://img.icons8.com/color/48/stack.png',
+      icon: '/icons/48_stack.webp',
       title: 'Full-Stack Developer',
       text: 'Building end-to-end solutions with modern technologies.',
     },
     {
-      icon: 'https://img.icons8.com/3d-fluency/94/bot.png',
+      icon: '/icons/94_bot.webp',
       title: 'AI Enthusiast',
       text: 'Integrating intelligent features into real-world applications.',
     },
     {
-      icon: 'https://img.icons8.com/3d-fluency/94/thinking-face-2.png',
+      icon: '/icons/94_thinking_face_2.webp',
       title: 'Problem Solver',
       text: 'Transforming complex challenges into elegant solutions.',
     },
     {
-      icon: 'https://img.icons8.com/external-stickers-smashing-stocks/70/external-Learning-creativity-stickers-pack-stickers-smashing-stocks.png',
+      icon: '/icons/70_external_Learning_creativity_stickers_pack_stickers_smashing_stocks.webp',
       title: 'Continuous Learner',
       text: 'Always exploring new technologies and best practices.',
     },
@@ -52,14 +52,14 @@ export const skillsDataFlat: SkillItem[] = [
   { name: 'SQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuresqldatabase/azuresqldatabase-original.svg', color: '#CC2927', description: 'Querying and managing relational databases efficiently.', category: 'Programming' },
 
   // ─── AI & Machine Learning ───
-  { name: 'Machine Learning', icon: 'https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-machine-learning-big-data-flaticons-flat-flat-icons.png', color: '#9333EA', description: 'Building predictive models and intelligent systems.', category: 'AI & ML' },
+  { name: 'Machine Learning', icon: '/icons/64_external_machine_learning_big_data_flaticons_flat_flat_icons.webp', color: '#9333EA', description: 'Building predictive models and intelligent systems.', category: 'AI & ML' },
   { name: 'Deep Learning', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg', color: '#7C3AED', description: 'Neural networks for complex pattern recognition.', category: 'AI & ML' },
-  { name: 'NLP', icon: 'https://img.icons8.com/color/48/ai-robot--v11.png', color: '#8B5CF6', description: 'Processing and understanding human language with AI.', category: 'AI & ML' },
-  { name: 'LLMs', icon: 'https://img.icons8.com/fluency/96/artificial-intelligence.png', color: '#A855F7', description: 'Large Language Models for text generation and reasoning.', category: 'AI & ML' },
+  { name: 'NLP', icon: '/icons/48_ai_robot__v11.webp', color: '#8B5CF6', description: 'Processing and understanding human language with AI.', category: 'AI & ML' },
+  { name: 'LLMs', icon: '/icons/96_artificial_intelligence.webp', color: '#A855F7', description: 'Large Language Models for text generation and reasoning.', category: 'AI & ML' },
   { name: 'Transformers', icon: 'https://huggingface.co/front/assets/huggingface_logo-noborder.svg', color: '#FFD21E', description: 'Attention-based architectures for NLP and vision.', category: 'AI & ML' },
   { name: 'LangGraph', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg', color: '#06B6D4', description: 'Building stateful multi-agent AI workflows.', category: 'AI & ML' },
-  { name: 'Prompt Engineering', icon: 'https://img.icons8.com/fluency/48/chatbot.png', color: '#F59E0B', description: 'Crafting effective prompts for optimal AI outputs.', category: 'AI & ML' },
-  { name: 'RAG', icon: 'https://img.icons8.com/color/48/overview-pages-2.png', color: '#10B981', description: 'Retrieval-Augmented Generation for grounded AI.', category: 'AI & ML' },
+  { name: 'Prompt Engineering', icon: '/icons/48_chatbot.webp', color: '#F59E0B', description: 'Crafting effective prompts for optimal AI outputs.', category: 'AI & ML' },
+  { name: 'RAG', icon: '/icons/48_overview_pages_2.webp', color: '#10B981', description: 'Retrieval-Augmented Generation for grounded AI.', category: 'AI & ML' },
   { name: 'PyTorch', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg', color: '#EE4C2C', description: 'Deep learning framework for research and production.', category: 'AI & ML' },
   { name: 'TensorFlow', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg', color: '#FF6F00', description: 'End-to-end platform for machine learning.', category: 'AI & ML' },
   { name: 'Scikit-learn', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg', color: '#F7931E', description: 'Classical ML algorithms and model evaluation tools.', category: 'AI & ML' },
@@ -68,14 +68,14 @@ export const skillsDataFlat: SkillItem[] = [
   { name: 'Pandas', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg', color: '#150458', description: 'Data manipulation and analysis library for Python.', category: 'Data Analytics' },
   { name: 'NumPy', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg', color: '#013243', description: 'Numerical computing and array operations in Python.', category: 'Data Analytics' },
   { name: 'Data Visualization', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/plotly/plotly-original.svg', color: '#3B82F6', description: 'Creating insightful charts and visual representations.', category: 'Data Analytics' },
-  { name: 'Tableau', icon: 'https://img.icons8.com/color/48/tableau-software.png', color: '#E97627', description: 'Interactive dashboards and business intelligence platform.', category: 'Data Analytics' },
+  { name: 'Tableau', icon: '/icons/48_tableau_software.webp', color: '#E97627', description: 'Interactive dashboards and business intelligence platform.', category: 'Data Analytics' },
   { name: 'EDA', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg', color: '#14B8A6', description: 'Exploratory Data Analysis for pattern discovery.', category: 'Data Analytics' },
 
   // ─── Web Development ───
   { name: 'Flask', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg', color: '#FFFFFF', description: 'Lightweight Python web framework for building REST APIs.', category: 'Web Development' },
   { name: 'FastAPI', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg', color: '#009688', description: 'Modern, fast Python web framework for APIs.', category: 'Web Development' },
   { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', color: '#61DAFB', description: 'Component-based UI library for interactive web apps.', category: 'Web Development' },
-  { name: 'Next.js', icon: 'https://img.icons8.com/color/48/nextjs.png', color: '#FFFFFF', description: 'Full-stack React framework with SSR and static generation.', category: 'Web Development' },
+  { name: 'Next.js', icon: '/icons/48_nextjs.webp', color: '#FFFFFF', description: 'Full-stack React framework with SSR and static generation.', category: 'Web Development' },
   { name: 'TailwindCSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg', color: '#06B6D4', description: 'Utility-first CSS framework for rapid, beautiful UI design.', category: 'Web Development' },
   { name: 'REST APIs', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg', color: '#6366F1', description: 'Designing and consuming RESTful web services.', category: 'Web Development' },
   { name: 'CSS3', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg', color: '#1572B6', description: 'Crafting modern, responsive layouts and stunning visuals.', category: 'Web Development' },
