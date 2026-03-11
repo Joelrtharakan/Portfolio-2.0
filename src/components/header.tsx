@@ -36,7 +36,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between h-20 px-4 md:px-8">
         <Link href="/" className="flex items-center z-50">
           <Image
-            src="/Header icon.png"
+            src="/Header icon.webp"
             alt="Joel R Tharakan Header Icon"
             width={80}
             height={80}
