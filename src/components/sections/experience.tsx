@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Briefcase } from 'lucide-react';
+import { Briefcase, ExternalLink } from 'lucide-react';
 import { experienceData } from '@/lib/data';
 
 const Experience = () => {
@@ -61,6 +61,12 @@ const Experience = () => {
                   <h3 className="text-xl font-bold mt-1">{item.title}</h3>
                   <p className="text-md font-medium text-foreground/80 mt-1">{item.company}</p>
                   <p className="text-sm text-foreground/70 mt-2">{item.description}</p>
+                  {/* @ts-ignore - link is optional */}
+                  {item.link && (
+                    <a href={item.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center mt-3 text-sm font-medium text-primary hover:underline transition-all duration-300">
+                      View Website <ExternalLink className="w-3 h-3 ml-1" />
+                    </a>
+                  )}
                 </div>
               </motion.div>
             ))}

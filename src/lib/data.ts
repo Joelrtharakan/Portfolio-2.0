@@ -167,6 +167,13 @@ export const projectsData = [
 
 export const experienceData = [
   {
+    date: 'May 2026 – Present',
+    title: 'Lead Full Stack Developer Intern',
+    company: 'ARTnTEQ Business Solution Pvt. Ltd. (ARTnTEQ Digital) (Remote)',
+    description: 'Developed a scalable LMS platform (CWAY Academy) using full stack architecture. Designed REST APIs using Node.js, Express.js, and PostgreSQL, and built a secure authentication system with JWT and RBAC.',
+    link: 'https://cwayacademy.com/',
+  },
+  {
     date: 'Summer 2025',
     title: 'AI Development & Software Integration Intern',
     company: 'LQMS Software Solutions LLC, Dubai (Onsite)',
